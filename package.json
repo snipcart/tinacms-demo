@@ -3,13 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@tinacms/api-git": "^0.24.0",
+    "@tinacms/git-client": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.2",
     "next": "9.4.4",
+    "next-tinacms-markdown": "^0.24.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-markdown": "^4.3.1",
+    "react-tinacms-editor": "^0.25.0",
+    "react-tinacms-inline": "^0.24.0",
+    "slugify": "^1.4.5",
+    "styled-components": "^5.1.1",
+    "tinacms": "^0.24.0"
   }
 }
