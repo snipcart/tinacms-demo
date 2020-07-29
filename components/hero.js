@@ -3,8 +3,6 @@ import { InlineText, InlineImage } from 'react-tinacms-inline'
 const Hero = (props) => {
   return (
     <div className="hero" style={{ color: props.textColor }}>
-      {/* {props.img && <img src={props.image}/>} */}
-
       <div className="hero__overlay" style={{ backgroundColor: props.overlay }}>
       </div>
       <div className="hero__image" style={{opacity: 1 -(props.overlayOpacity / 100)}}>
